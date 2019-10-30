@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Attendance Senate</title>
+    <link rel="stylesheet" href="TGIF.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div>
+
+            <ul>
+                <li>
+                    <a href="Home_TGIF.html">Home</a>
+                </li>
+                <li>
+                    <a href="senate-data.html">Congress 113</a>
+                    <ul>
+                        <li>
+                            <a href="senate-data.html">Senate</a>
+                        </li>
+                        <li>
+                            <a href="House-data.html">House</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="attendanceSenate.html">Attendance</a>
+                    <ul>
+                        <li>
+                            <a href="attendanceSenate.html">Senate</a>
+                        </li>
+                        <li>
+                            <a href="attendance.html">House</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Loyalty_SenateTGIF.html">Party Loyalty</a>
+                    <ul>
+                        <li>
+                            <a href="Loyalty_SenateTGIF.html">Senate</a>
+                        </li>
+                        <li>
+                            <a href="Loyalty_TGIF.html">House</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Congressmen</h1>
+    </header>
+    <div>
+        <p>The major power of the House is to pass federal legislation that affects the entire country, although its
+            bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law
+            (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The
+            House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached
+            officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no
+            majority in the Electoral College.</p>
+        <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but
+            every state is entitled to at least one representative.</p>
+    </div>
+
+    <h2>Senate at a glance</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Party</th>
+                <th>Number of Reps</th>
+                <th>% Voted with Prty</th>
+            </tr>
+        </thead>
+        <tbody id="dusack">
+
+        </tbody>
+    </table>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Absolute party votes</th>
+                <th>Party votes in %</th>
+            </tr>
+        </thead>
+        <tbody id="missedtable">
+
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Absolute party votes</th>
+                <th>Party votes in %</th>
+            </tr>
+        </thead>
+        <tbody id="attendancetable">
+
+        </tbody>
+    </table>
+    </div>
+    <script src="pro-Congress-113-senate.js"></script>
+    <script src="statistics.js"></script>
+
+</body>
+
+</html>
