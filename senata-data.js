@@ -20,6 +20,7 @@ function createTable(filterArr, filterArr2) {
     ) {
       createTable2(x);
     }
+    //commentar
     if (
       filterArr.length > 0 &&
       filterArr2.length > 0 &&
