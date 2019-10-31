@@ -4,115 +4,122 @@
 <head>
     <meta charset="utf-8">
     <title>Loyalty Senate</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./TGIF.css">
 </head>
 
 <body>
-    <nav>
-        <div>
+    <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+            <a class="navbar-brand"> <img id="logo"
+                    src="/Pictures_TGIF/800px-Great_Seal_of_the_United_States_(obverse).svg.png"></a>
             <div>
-                <a href="Home_TGIF.html">Transparent Government in Fact</a>
+                <a class="weg" href="Home_TGIF.html">Transparent Government in Fact</a>
             </div>
-            <ul>
-                <li>
-                    <a href="Home_TGIF.html">Home</a>
-                </li>
-                <li>
-                    <a href="senate-data.html">Congress 113</a>
-                    <ul>
-                        <li>
-                            <a href="senate-data.html">Senate</a>
-                        </li>
-                        <li>
-                            <a href="House-data.html">House</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="attendanceSenate.html">Attendance</a>
-                    <ul>
-                        <li>
-                            <a href="attendanceSenate.html">Senate</a>
-                        </li>
-                        <li>
-                            <a href="attendance.html">House</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="Loyalty_SenateTGIF.html">Party Loyalty</a>
-                    <ul>
-                        <li>
-                            <a href="Loyalty_SenateTGIF.html">Senate</a>
-                        </li>
-                        <li>
-                            <a href="Loyalty_TGIF.html">House</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-    </nav>
-    <header>
+        <nav class="d-flex bg-light">
+            <a class="nav-link nav-item active" href="Home_TGIF.html">Home</a>
+            <div class="navelement nav-item dropdown">
+                <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Congress 113</div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="senate-data.html">Senate</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="House-data.html">House</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navelement nav-item dropdown">
+                <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Attendance</div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="attendanceSenate.html">Senate</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="attendance.html">House</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navelement nav-item dropdown">
+                <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Party Loyalty</div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="Loyalty_SenateTGIF.html">Senate</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="Loyalty_TGIF.html">House</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
 
-    </header>
-    <div>
-        <h2>Loyalty</h2>
-        <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house.
-            Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most
-            cases, debates continue even if a majority is not present.</p>
+        </header>
+        <div>
+            <h2>Loyalty</h2>
+            <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans
+                respectively, tend to be the most faithful in voting for their party's nominee for office and
+                legislation that backs their party's agenda</p>
 
-        <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye"
-            or
-            "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a
-            roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In
-            the
-            case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the
-            tiebreaking vote.</p>
+            <h2>Senate at a glance</h2>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Party</th>
+                        <th>Number of Reps</th>
+                        <th>% Voted with Prty</th>
+                    </tr>
+                </thead>
+                <tbody id="dusack">
 
-        <h2>Senate at a glance</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Party</th>
-                    <th>Number of Reps</th>
-                    <th>% Voted with Prty</th>
-                </tr>
-            </thead>
-            <tbody id="dusack">
+                </tbody>
+            </table>
 
-            </tbody>
-        </table>
+            <h4>Least Loyal (Bottom 10% of Party)</h4>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Absolute party votes</th>
+                        <th>Party votes in %</th>
+                    </tr>
+                </thead>
+                <tbody id="miep">
 
+                </tbody>
+            </table>
+            <h4>Most Loyal (Bottom 10% of Party)</h4>
+            <table class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Absolute party votes</th>
+                        <th>Party votes in %</th>
+                    </tr>
+                </thead>
+                <tbody id="moep">
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Absolute party votes</th>
-                    <th>Party votes in %</th>
-                </tr>
-            </thead>
-            <tbody id="miep">
-
-            </tbody>
-        </table>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Absolute party votes</th>
-                    <th>Party votes in %</th>
-                </tr>
-            </thead>
-            <tbody id="moep">
-
-            </tbody>
-        </table>
-    </div>
-    <script src="pro-Congress-113-senate.js"></script>
-    <script src="statistics.js"></script>
+                </tbody>
+            </table>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+        <script src="statistics.js"></script>
 
 </body>
+<footer class="page-footer font-small blue pt-4">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Lucky Entertainment</div>
+</footer>
 
 </html>
